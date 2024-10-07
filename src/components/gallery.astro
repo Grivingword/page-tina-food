@@ -1,0 +1,43 @@
+---
+const imageCount = 4; // Número total de imágenes
+---
+
+<h2 class="font-poppins text-center text-6xl text-primary-500 font-bold py-14">Galleria</h2>
+
+<div id="my-gallery" class="grid grid-cols-2 md:grid-cols-4 gap-2 bg-black">
+    { Array.from({ length: imageCount }).map((_, index) => {
+        const imageNumber = index + 2; // Genera números del 1 al 12
+
+        const imageSrc = `/gallery/gallery_${ imageNumber }.jpg`; // Ruta de la imagen
+
+        return (
+                <a href={ imageSrc } data-pswp-width="900" data-pswp-height="1600" class="contents">
+                    <img
+                            loading="lazy"
+                            decoding="async"
+                            class="h-auto max-w-full rounded-lg"
+                            src={ imageSrc }
+                            alt={ `gallery_${ imageNumber }` }
+                    />
+                </a>
+        );
+    }) }
+</div>
+
+<script>
+    import 'photoswipe/style.css';
+    import pswpModule from 'photoswipe';
+    import PhotoSwipeLightbox from 'photoswipe/lightbox';
+
+    const lightbox = new PhotoSwipeLightbox({
+        pswpModule,
+        children: 'a',
+        gallery: '#my-gallery',
+    });
+
+    document.addEventListener(
+            'astro:page-load',
+            () => { if (lightbox) lightbox.init(); },
+            { once: false },
+    );
+</script>

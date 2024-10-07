@@ -10,8 +10,17 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.15.11",
     "@astrojs/check": "^0.9.4",
+    "@astrojs/tailwind": "^5.1.1",
+    "astro": "^4.15.11",
+    "astro-icon": "^1.1.1",
+    "flowbite": "^2.5.2",
+    "photoswipe": "^5.4.4",
+    "tailwindcss": "^3.4.13",
     "typescript": "^5.6.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
+    "@types/photoswipe": "^4.1.6"
   }
 }
