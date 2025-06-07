@@ -1,97 +1,20 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/header.astro';
-import Footer from '../components/footer.astro';
-import { Icon } from 'astro-icon/components';
-import Gallery from '../components/gallery.astro';
-import Cards from '../components/cards.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import HotItems from '../components/HotItems.astro';
+import Process from '../components/Process.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Newsletter from '../components/Newsletter.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="Tina Food.">
-    <main class="bg-gray-100">
-        <!-- Navbar -->
-        <Header/>
-
-        <!-- Hero Section -->
-        <section class="bg-cover object-cover text-white h-[90vh]" style="background-image: url('/hero_1.png')">
-        </section>
-
-        <section class="py-16 bg-white text-primary-900">
-            <div class="container mx-auto">
-                <div class="container mx-auto grid grid-cols-3 gap-4 text-center">
-                    <!-- Hora -->
-                    <div class="flex flex-col items-center">
-                        <Icon name="clock" class="text-2xl text-primary-500 fond-bold"></Icon>
-                        <p class="mt-3 text-2xl text-black font-semibold">12:00 PM</p>
-                        <p class="mt-3 text-base text-gray-500 font-bold">Horario</p>
-                    </div>
-
-                    <!-- Ubicación -->
-                    <div class="flex flex-col items-center">
-                        <Icon name="clock" class="text-2xl text-primary-500 fond-bold"></Icon>
-                        <p class="mt-3 text-2xl text-black font-semibold">Villahermosa, Tabasco</p>
-                        <p class="mt-3 ext-base text-gray-500 font-bold">Ubicacion</p>
-                    </div>
-
-                    <!-- Teléfono -->
-                    <div class="flex flex-col items-center">
-                        <Icon name="clock" class="text-2xl text-primary-500 fond-bold"></Icon>
-                        <p class="mt-3 text-2xl text-black font-semibold">+1 (555) 123-4567</p>
-                        <p class="mt-3 text-base text-gray-500 font-bold">Telefono</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="grid grid-cols-2 h-screen">
-            <div class="bg-primary-500">
-                <div class="flex items-center justify-center text-white h-full">
-                    <h1 class="text-4xl font-bold">¡Deliciosas Hamburguesas!</h1>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Capa oscura -->
-                <div class="bg-cover bg-center h-full" style="background-image: url('/grid/grid_1.jpg');">
-                    <div class="flex items-center justify-center h-full relative"> <!-- Añadido 'relative' para el contenedor del texto -->
-                        <div class="text-white text-center p-4 z-10"> <!-- 'z-10' para asegurar que el texto esté encima -->
-                            <h1 class="text-4xl font-bold">Nuestras Hamburguesas</h1>
-                            <p class="text-lg mt-2">Jugosas y llenas de sabor.</p>
-                            <span class="text-2xl font-semibold mt-4">$99.99</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="relative">
-                <div class="absolute inset-0 bg-black opacity-50"></div> <!-- Capa oscura -->
-                <div class="bg-cover bg-center h-full" style="background-image: url('/grid/grid_2.jpg');">
-                    <div class="flex items-center justify-center h-full">
-                        <div class="text-white text-center p-4 z-10">
-                            <h1 class="text-4xl font-bold">Deditos de Queso</h1>
-                            <p class="text-lg mt-2">Crujientes y irresistibles.</p>
-                            <span class="text-2xl font-semibold mt-4">$49.99</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bg-black">
-                <div class="flex items-center justify-center text-white h-full">
-                    <h1 class="text-4xl font-bold">¡Deliciosas Hamburguesas!</h1>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="py-16 bg-black">
-            <Cards/>
-        </section>
-
-        <!-- What is Food Chilli Section -->
-        <section class="bg-gray-50">
-            <Gallery/>
-        </section>
-
-
-        <Footer/>
-    </main>
+<Layout title="TINA FOOD - Hamburguesas Épicas y Comida Deliciosa">
+	<Header />
+	<Hero />
+	<HotItems />
+	<Process />
+	<Testimonials />
+	<!-- <Newsletter /> -->
+	<Footer />
 </Layout>
-

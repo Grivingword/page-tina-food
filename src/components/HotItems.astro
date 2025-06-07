@@ -1,0 +1,375 @@
+---
+---
+
+<section class="py-20 bg-dark-900 relative overflow-hidden" id="menu">
+	<!-- Background Pattern -->
+	<div class="absolute inset-0 opacity-5">
+		<div class="absolute top-20 left-20 w-40 h-40 bg-primary-500 rounded-full blur-3xl"></div>
+		<div class="absolute bottom-20 right-20 w-32 h-32 bg-secondary-500 rounded-full blur-3xl"></div>
+	</div>
+
+	<div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+		<!-- Section Header -->
+		<div class="text-center mb-16 animate-fade-in">
+			<div class="inline-flex items-center gap-3 bg-primary-500/10 backdrop-blur-md px-6 py-3 rounded-full border border-primary-500/20 mb-6">
+				<span class="text-2xl animate-bounce">🔥</span>
+				<span class="text-primary-400 font-bold uppercase tracking-wider">Platillos Populares</span>
+			</div>
+			<h2 class="text-4xl lg:text-6xl font-black bg-gradient-to-r from-primary-400 via-primary-500 to-primary-600 bg-clip-text text-transparent mb-6">
+				MENÚ ESTRELLA
+			</h2>
+			<p class="text-gray-300 text-xl max-w-3xl mx-auto leading-relaxed">
+				Ingredientes frescos y locales para una experiencia gastronómica única y deliciosa
+			</p>
+		</div>
+
+		<!-- Carousel Container -->
+		<div class="relative">
+			<!-- Navigation Buttons -->
+			<button class="carousel-btn carousel-btn-prev absolute left-0 top-1/2 -translate-y-1/2 z-20" id="prevBtn">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+				</svg>
+			</button>
+
+			<button class="carousel-btn carousel-btn-next absolute right-0 top-1/2 -translate-y-1/2 z-20" id="nextBtn">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+					<path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+				</svg>
+			</button>
+
+			<!-- Items Container -->
+			<div class="mx-16 overflow-hidden rounded-3xl">
+				<div class="carousel-track flex transition-transform duration-500 ease-in-out" id="carouselTrack">
+					<!-- Item 1 - Hamburguesa Clásica -->
+					<div class="carousel-item flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 p-3">
+						<div class="menu-card group">
+							<div class="relative mb-6 overflow-hidden rounded-2xl">
+								<img 
+									src="https://images.pexels.com/photos/1556909/pexels-photo-1556909.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" 
+									alt="Hamburguesa Clásica" 
+									class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+								>
+								<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+								<span class="badge badge-bestseller">
+									Best Seller
+								</span>
+								<div class="absolute bottom-3 left-3 text-white">
+									<div class="flex text-yellow-400 text-sm mb-1">⭐⭐⭐⭐⭐</div>
+								</div>
+							</div>
+							<div class="flex justify-between items-start">
+								<div class="flex-1">
+									<h3 class="text-white font-bold text-xl mb-2 group-hover:text-primary-400 transition-colors duration-300">Hamburguesa Clásica</h3>
+									<p class="text-gray-400 text-sm mb-3">Acompañada de papas</p>
+									<p class="text-primary-400 font-black text-2xl">$110.00</p>
+								</div>
+								<button class="add-btn">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+										<path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Item 2 - Hamburguesa Hawaiana -->
+					<div class="carousel-item flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 p-3">
+						<div class="menu-card menu-card-featured group">
+							<div class="relative mb-6 overflow-hidden rounded-2xl">
+								<img 
+									src="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" 
+									alt="Hamburguesa Hawaiana" 
+									class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+								>
+								<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+								<span class="badge badge-popular">
+									Popular 🔥
+								</span>
+								<div class="absolute bottom-3 left-3 text-white">
+									<div class="flex text-yellow-400 text-sm mb-1">⭐⭐⭐⭐⭐</div>
+								</div>
+							</div>
+							<div class="flex justify-between items-start">
+								<div class="flex-1">
+									<h3 class="text-white font-bold text-xl mb-2 group-hover:text-primary-400 transition-colors duration-300">Hamburguesa Hawaiana</h3>
+									<p class="text-gray-400 text-sm mb-3">Incluye papas</p>
+									<p class="text-primary-400 font-black text-2xl">$130.00</p>
+								</div>
+								<button class="add-btn">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+										<path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Item 3 - Chicken Burger -->
+					<div class="carousel-item flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 p-3">
+						<div class="menu-card group">
+							<div class="relative mb-6 overflow-hidden rounded-2xl">
+								<img 
+									src="https://images.pexels.com/photos/3004909/pexels-photo-3004909.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" 
+									alt="Chicken Burger" 
+									class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+								>
+								<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+								<span class="badge badge-healthy">
+									Saludable 🥗
+								</span>
+								<div class="absolute bottom-3 left-3 text-white">
+									<div class="flex text-yellow-400 text-sm mb-1">⭐⭐⭐⭐⭐</div>
+								</div>
+							</div>
+							<div class="flex justify-between items-start">
+								<div class="flex-1">
+									<h3 class="text-white font-bold text-xl mb-2 group-hover:text-primary-400 transition-colors duration-300">Chicken Burger</h3>
+									<p class="text-gray-400 text-sm mb-3">Milanesa de pollo empanizada</p>
+									<p class="text-primary-400 font-black text-2xl">$130.00</p>
+								</div>
+								<button class="add-btn">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+										<path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Item 4 - Alitas -->
+					<div class="carousel-item flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 p-3">
+						<div class="menu-card group">
+							<div class="relative mb-6 overflow-hidden rounded-2xl">
+								<img 
+									src="https://images.pexels.com/photos/3738730/pexels-photo-3738730.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" 
+									alt="Alitas" 
+									class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+								>
+								<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+								<span class="badge badge-new">
+									Nuevo ✨
+								</span>
+								<div class="absolute bottom-3 left-3 text-white">
+									<div class="flex text-yellow-400 text-sm mb-1">⭐⭐⭐⭐⭐</div>
+								</div>
+							</div>
+							<div class="flex justify-between items-start">
+								<div class="flex-1">
+									<h3 class="text-white font-bold text-xl mb-2 group-hover:text-primary-400 transition-colors duration-300">Alitas</h3>
+									<p class="text-gray-400 text-sm mb-3">10 pz de alitas bañadas en la salsa</p>
+									<p class="text-primary-400 font-black text-2xl">$130.00</p>
+								</div>
+								<button class="add-btn">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+										<path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Item 5 - Hot Dog Jumbo -->
+					<div class="carousel-item flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 p-3">
+						<div class="menu-card group">
+							<div class="relative mb-6 overflow-hidden rounded-2xl">
+								<img 
+									src="https://images.pexels.com/photos/4676410/pexels-photo-4676410.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" 
+									alt="Hot Dog Jumbo" 
+									class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+								>
+								<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+								<span class="badge badge-spicy">
+									Picante 🌶️
+								</span>
+								<div class="absolute bottom-3 left-3 text-white">
+									<div class="flex text-yellow-400 text-sm mb-1">⭐⭐⭐⭐⭐</div>
+								</div>
+							</div>
+							<div class="flex justify-between items-start">
+								<div class="flex-1">
+									<h3 class="text-white font-bold text-xl mb-2 group-hover:text-primary-400 transition-colors duration-300">Hot Dog Jumbo</h3>
+									<p class="text-gray-400 text-sm mb-3">Hot dog jumbo con salchicha</p>
+									<p class="text-primary-400 font-black text-2xl">$79.00</p>
+								</div>
+								<button class="add-btn">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+										<path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+
+					<!-- Item 6 - Papas con Bonneles -->
+					<div class="carousel-item flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 p-3">
+						<div class="menu-card group">
+							<div class="relative mb-6 overflow-hidden rounded-2xl">
+								<img 
+									src="https://images.pexels.com/photos/1893556/pexels-photo-1893556.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop" 
+									alt="Papas con Bonneles" 
+									class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+								>
+								<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+								<span class="badge badge-combo">
+									Combo 🍟
+								</span>
+								<div class="absolute bottom-3 left-3 text-white">
+									<div class="flex text-yellow-400 text-sm mb-1">⭐⭐⭐⭐⭐</div>
+								</div>
+							</div>
+							<div class="flex justify-between items-start">
+								<div class="flex-1">
+									<h3 class="text-white font-bold text-xl mb-2 group-hover:text-primary-400 transition-colors duration-300">Papas con Bonneles</h3>
+									<p class="text-gray-400 text-sm mb-3">Papas fritas con trocitos de bonneles</p>
+									<p class="text-primary-400 font-black text-2xl">$120.00</p>
+								</div>
+								<button class="add-btn">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+										<path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Carousel Indicators -->
+		<div class="flex justify-center gap-3 mt-12">
+			<button class="carousel-dot active" data-slide="0"></button>
+			<button class="carousel-dot" data-slide="1"></button>
+			<button class="carousel-dot" data-slide="2"></button>
+		</div>
+
+		<!-- View All Menu Button -->
+		<div class="text-center mt-12">
+			<a href="#" class="inline-flex items-center gap-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:from-primary-600 hover:to-primary-700 hover:scale-105 transition-all duration-300">
+				<span>Ver Menú Completo</span>
+				<svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+					<path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+				</svg>
+			</a>
+		</div>
+	</div>
+</section>
+
+<style>
+	.menu-card {
+		@apply bg-gradient-to-br from-dark-800 to-dark-700 rounded-3xl p-6 border border-primary-500/20 hover:border-primary-500/40 transition-all duration-300 hover:transform hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary-500/10;
+	}
+
+	.menu-card-featured {
+		@apply bg-gradient-to-br from-primary-500/20 to-primary-600/20 border-primary-500/40 transform scale-105;
+	}
+
+	.badge {
+		@apply absolute top-3 right-3 px-3 py-1 rounded-full text-xs font-bold;
+	}
+
+	.badge-bestseller {
+		@apply bg-red-500 text-white;
+	}
+
+	.badge-popular {
+		@apply bg-primary-500 text-white;
+	}
+
+	.badge-healthy {
+		@apply bg-secondary-500 text-white;
+	}
+
+	.badge-new {
+		@apply bg-purple-500 text-white;
+	}
+
+	.badge-spicy {
+		@apply bg-red-600 text-white;
+	}
+
+	.badge-combo {
+		@apply bg-yellow-500 text-black;
+	}
+
+	.add-btn {
+		@apply w-12 h-12 bg-white/10 hover:bg-primary-500 hover:scale-110 text-white rounded-full flex items-center justify-center transition-all duration-300 backdrop-blur-md border border-primary-500/20 hover:border-primary-500;
+	}
+
+	.carousel-btn {
+		@apply w-14 h-14 bg-white/10 backdrop-blur-md text-white rounded-full flex items-center justify-center hover:bg-primary-500 hover:scale-110 transition-all duration-300 shadow-lg border border-primary-500/20;
+	}
+
+	.carousel-dot {
+		@apply w-4 h-4 bg-gray-600 rounded-full transition-all duration-300 hover:bg-primary-500;
+	}
+
+	.carousel-dot.active {
+		@apply bg-primary-500 scale-125;
+	}
+</style>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		const track = document.getElementById('carouselTrack');
+		const prevBtn = document.getElementById('prevBtn');
+		const nextBtn = document.getElementById('nextBtn');
+		const dots = document.querySelectorAll('.carousel-dot');
+		
+		let currentSlide = 0;
+		const totalSlides = 3; // Adjust based on your responsive breakpoints
+		
+		function updateCarousel() {
+			const translateX = -currentSlide * (100 / totalSlides);
+			track.style.transform = `translateX(${translateX}%)`;
+			
+			// Update dots
+			dots.forEach((dot, index) => {
+				dot.classList.toggle('active', index === currentSlide);
+			});
+		}
+		
+		function nextSlide() {
+			currentSlide = (currentSlide + 1) % totalSlides;
+			updateCarousel();
+		}
+		
+		function prevSlide() {
+			currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+			updateCarousel();
+		}
+		
+		nextBtn?.addEventListener('click', nextSlide);
+		prevBtn?.addEventListener('click', prevSlide);
+		
+		// Dot navigation
+		dots.forEach((dot, index) => {
+			dot.addEventListener('click', () => {
+				currentSlide = index;
+				updateCarousel();
+			});
+		});
+		
+		// Auto-play carousel
+		setInterval(nextSlide, 5000);
+		
+		// Add to cart functionality
+		document.querySelectorAll('.add-btn').forEach(btn => {
+			btn.addEventListener('click', function(e) {
+				e.preventDefault();
+				
+				// Add animation feedback
+				this.style.transform = 'scale(0.8)';
+				setTimeout(() => {
+					this.style.transform = 'scale(1.1)';
+					setTimeout(() => {
+						this.style.transform = 'scale(1)';
+					}, 150);
+				}, 150);
+				
+				// Here you would add the item to cart
+				console.log('Item added to cart');
+			});
+		});
+	});
+</script>

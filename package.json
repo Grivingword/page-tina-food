@@ -1,26 +1,17 @@
 {
-  "name": "page-tina-food",
+  "name": "@example/basics",
   "type": "module",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "@astrojs/tailwind": "^5.1.1",
-    "astro": "^4.15.11",
-    "astro-icon": "^1.1.1",
-    "flowbite": "^2.5.2",
-    "photoswipe": "^5.4.4",
-    "tailwindcss": "^3.4.13",
-    "typescript": "^5.6.2"
-  },
-  "devDependencies": {
-    "@tailwindcss/typography": "^0.5.15",
-    "@types/photoswipe": "^4.1.6"
+    "astro": "^5.2.5",
+    "@astrojs/tailwind": "^5.1.2",
+    "tailwindcss": "^3.4.0"
   }
 }

@@ -1,0 +1,99 @@
+---
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-dark-900/95 backdrop-blur-md border-b border-primary-500/20 transition-all duration-300" id="header">
+	<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+		<div class="flex items-center justify-between py-4">
+			<!-- Logo -->
+			<div class="flex items-center gap-3 group">
+				<div class="relative">
+					<div class="w-12 h-12 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center transform group-hover:scale-110 transition-all duration-300">
+						<span class="text-white font-black text-lg">🍔</span>
+					</div>
+					<div class="absolute -top-1 -right-1 w-4 h-4 bg-secondary-500 rounded-full animate-pulse"></div>
+				</div>
+				<div class="flex flex-col">
+					<span class="text-2xl font-black text-white tracking-tight">TINA</span>
+					<span class="text-xs text-primary-400 font-semibold -mt-1">FOOD</span>
+				</div>
+			</div>
+			
+			<!-- Navigation Links -->
+			<ul class="hidden md:flex items-center space-x-8">
+				<li><a href="#home" class="nav-link">Inicio</a></li>
+				<li><a href="#menu" class="nav-link">Menú</a></li>
+				<li><a href="#about" class="nav-link">Nosotros</a></li>
+				<li><a href="#contact" class="nav-link">Contacto</a></li>
+			</ul>
+
+			<!-- Actions -->
+			<div class="flex items-center gap-4">
+				<button class="p-3 text-white hover:text-primary-400 hover:bg-primary-500/10 rounded-full transition-all duration-300 group" aria-label="Buscar">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="group-hover:scale-110 transition-transform duration-300">
+						<path d="M21 21L16.514 16.506M19 10.5C19 15.194 15.194 19 10.5 19S2 15.194 2 10.5S5.806 2 10.5 2S19 5.806 19 10.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+					</svg>
+				</button>
+				<button class="relative p-3 text-white hover:text-primary-400 hover:bg-primary-500/10 rounded-full transition-all duration-300 group" aria-label="Carrito">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="group-hover:scale-110 transition-transform duration-300">
+						<path d="M3 3H5L5.4 5M7 13H17L21 5H5.4M7 13L5.4 5M7 13L4.7 15.3C4.3 15.7 4.6 16.5 5.1 16.5H17M17 13V17C17 18.1 16.1 19 15 19H9C7.9 19 7 18.1 7 17V13H17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+					</svg>
+					<span class="absolute -top-1 -right-1 bg-primary-500 text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center animate-bounce">3</span>
+				</button>
+				
+				<!-- Mobile Menu Button -->
+				<button class="md:hidden flex flex-col gap-1 p-2 group" aria-label="Menú" id="mobile-menu-btn">
+					<span class="w-6 h-0.5 bg-white transition-all duration-300 group-hover:bg-primary-400"></span>
+					<span class="w-6 h-0.5 bg-white transition-all duration-300 group-hover:bg-primary-400"></span>
+					<span class="w-6 h-0.5 bg-white transition-all duration-300 group-hover:bg-primary-400"></span>
+				</button>
+			</div>
+		</div>
+
+		<!-- Mobile Menu -->
+		<div class="md:hidden hidden bg-dark-800/95 backdrop-blur-md rounded-2xl mt-4 p-6 border border-primary-500/20" id="mobile-menu">
+			<ul class="space-y-4">
+				<li><a href="#home" class="block text-white hover:text-primary-400 transition-colors duration-300 py-2">Inicio</a></li>
+				<li><a href="#menu" class="block text-white hover:text-primary-400 transition-colors duration-300 py-2">Menú</a></li>
+				<li><a href="#about" class="block text-white hover:text-primary-400 transition-colors duration-300 py-2">Nosotros</a></li>
+				<li><a href="#contact" class="block text-white hover:text-primary-400 transition-colors duration-300 py-2">Contacto</a></li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+<style>
+	.nav-link {
+		@apply text-white font-medium relative transition-all duration-300 hover:text-primary-400 py-2 px-4 rounded-full hover:bg-primary-500/10;
+	}
+	
+	.nav-link::after {
+		@apply content-[''] absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-primary-500 transition-all duration-300;
+	}
+	
+	.nav-link:hover::after {
+		@apply w-8;
+	}
+</style>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+		const mobileMenu = document.getElementById('mobile-menu');
+		
+		mobileMenuBtn?.addEventListener('click', function() {
+			mobileMenu?.classList.toggle('hidden');
+		});
+
+		// Header scroll effect
+		window.addEventListener('scroll', function() {
+			const header = document.getElementById('header');
+			if (window.scrollY > 100) {
+				header?.classList.add('bg-dark-900/98');
+				header?.classList.remove('bg-dark-900/95');
+			} else {
+				header?.classList.add('bg-dark-900/95');
+				header?.classList.remove('bg-dark-900/98');
+			}
+		});
+	});
+</script>
